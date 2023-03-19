@@ -1,0 +1,659 @@
+body{
+	font-family:'Times New Roman', Times, serif;
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	padding: 15px 50px;
+	background-color: black;
+	
+}
+
+.navTop{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navTop section.search{
+	display: flex;
+	align-items: center;
+	background-color: gray;
+	padding: 10px 20px;
+	border-radius: 10px;
+	
+}
+
+.navTop section.search input{
+	border: none;
+	background-color: transparent;
+}
+
+.navTop section.search input::placeholder{
+	color: lightgray;
+}
+
+.limoffer{
+	color: white;
+	font-size: 21px;
+	border-bottom: 2px solid green;
+	cursor: pointer;
+}
+
+.navBottom{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu{
+	color: lightgray;
+	margin-right: 50px;
+	font-size: 21px;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.slider{
+	background-image: url('https://img.freepik.com/premium-photo/black-brick-wall-dark-brickwork-texture-gloomy-grunge-background_541595-622.jpg');
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+	
+}
+
+.slidernav{
+	display: flex;
+	width: 500vw;
+	transition: 1s ease-in-out;
+}
+
+.slidernav section{
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.slidertitle{
+	position: absolute;
+	top: 8%;
+	right: 8%;
+	text-align: center;
+	z-index: 1;
+	font-size: 60px;
+	font-weight: 900;
+	color: whitesmoke;
+}
+
+.sliderImg{
+	z-index: 1;
+}
+
+.sliderprice{
+	position: absolute;
+	top: 8%;
+	left: 10%;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 300;
+	z-index: 1;
+	color: white;
+	border: 1px solid gray;
+	
+}
+
+.sliderbutton{
+	position: absolute;
+	right: 12%;
+	top: 45%;
+	z-index: 1;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.sliderbutton:hover{
+	color: black;
+	background-color: white;
+}
+
+.sliderBg{
+	width: 730px;
+	height: 730px;
+	
+	position: absolute;
+	
+	
+	border-radius: 50%;
+	
+}
+
+  .slidernav section:nth-child(1) .sliderBg {
+	background-color: #369e62;
+  }
+  .slidernav section:nth-child(2) .sliderBg {
+	background-color: rebeccapurple;
+  }
+  .slidernav section:nth-child(3) .sliderBg {
+	background-color: teal;
+  }
+  .slidernav section:nth-child(4) .sliderBg {
+	background-color: cornflowerblue;
+  }
+  .slidernav section:nth-child(5) .sliderBg {
+	background-color: rgb(124, 115, 80);
+  }
+
+  .features{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px;
+  }
+
+  .features section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  }
+
+  .featTitle{
+	margin: 15px 15px 7px 15px;
+	font-size: 20px;
+	font-weight: 550;
+  }
+
+  .featP{
+	width: 50%;
+	color: gray;
+	font-size: 18px;
+  }
+
+ .product{
+	height: 100vh;
+	background-color: whitesmoke;
+	position: relative;
+ } 
+ 
+  .prodDetails{
+	position: absolute;
+	left: 55%;
+	top: 5%;
+  }
+
+  .prodImg{
+	width: 50%
+  }
+
+  #none{
+	display: none;
+  }
+  
+
+  .prodTitle{
+	font-size: 80px;
+	font-weight: 1000;
+	margin-bottom: -5px;
+  }
+
+  .prodPrice{
+	font-size: 30px;
+}
+
+.prodDesc{
+	color: gray;
+	font-size: 18px;
+}
+
+.butCol1, .butCol2{
+	width: 35px;
+	height: 32px;
+	border-radius: 20%;
+	border: 0px;
+	margin:0px 5px 20px 0px;
+	cursor: pointer;
+	
+}
+
+.butCol1{
+	background-color: black;
+}
+
+.butCol2{
+	background-color: blue;
+}
+
+.butSize{
+	border: 1px solid black;
+	width: 70px;
+	height: 35px;
+	font-size: 19px;
+	text-align: center;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.prodSizes .butSize:hover{
+	background-color: black;
+	color: white;
+}
+
+.buy{
+	position: absolute;
+	right: 10%;
+	margin-top: 5%;
+	height: 50px;
+	
+	font-size: 15px;
+	font-weight: 600;
+	background-color: black;
+	color: white;
+	width: 140px;
+	cursor: pointer;
+}
+
+.buy:hover{
+	background-color: white;
+	color: black;
+}
+
+.payment{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 550px;
+	height: 550px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 10px 50px;
+	border: 1px solid gray;
+	box-shadow: 3px gray;
+	
+}  
+
+.payTitle{
+	color: rgb(94, 94, 94);
+	font-size: 25px;
+}
+
+.payment label{
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+}
+
+.payInput{
+	margin: 20px 0px;
+	border: none;
+	border-bottom: 1px solid gray;
+}
+
+
+
+.imgCard{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.payCard{
+	border: none;
+	border-bottom: 1px solid gray;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.infoCard{
+	display: flex;
+	padding: 25px 0px;
+	
+}
+
+.payMonth, .payYear, .payCvv{
+	width: 150px;
+    margin-right: 40px;	
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border: none;
+	border-bottom: 1px solid gray;
+}
+
+.payBut{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background-color:#369e62;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.payExit{
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	background-color: gray;
+	color: white;
+	border: none;
+	width: 28px;
+	height: 22px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.gallery{
+	display: flex;
+	padding: 20px;
+	text-align: center;
+	justify-content: center;
+}
+
+.galleryImg2{
+	width: 90%;
+	height: 70%;
+}
+
+.galleryImg1, .galleryImg3{
+	height: 80%;
+	width: 100%;	
+}
+
+.galHigh{
+	padding-top: 2%;
+}
+
+.galleryText{
+	padding: 10px;
+	font-size: 40px;
+	text-align: center;
+	
+	margin-bottom: 15px;
+}
+
+
+.newArrivals{
+	
+	display: flex;
+	background-color:black;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	margin-top: 20px;
+	padding: 50px;
+	
+}
+
+.arrivalsImg{
+	width: 30%;
+	height: 30%;
+	
+}
+
+.arrivalsText{
+	
+	flex:1;
+	font-size: 25px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	
+
+}
+
+.arrivalsText h1{
+	margin-top: 10%;
+}
+
+
+
+
+
+.arrivalsBut{
+	border: 1px solid white;
+	background-color: white;
+	text-decoration: none;
+	margin-top: 50px;
+	padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	font-size: 100%;
+	padding: 50px 30px;
+	
+}
+
+footer h1{
+	color: rgb(54, 54, 54);
+	font-size: 23px;
+}
+
+footer ul{
+	list-style-type: none;
+	padding-left: 5px;
+	line-height: 30px;
+	color: gray;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.follow{
+	padding-right: 105px;
+}
+
+.followNet{
+	width: 30px;
+	height: 30px;
+	margin-right: 6px;
+	cursor: pointer;
+}
+
+.followMail{
+	margin-bottom: 40px;
+	
+	
+	
+}
+
+.followInp{
+	height: 26px;
+	width: 200px;
+}
+
+.followJoin{
+	height: 32px;
+	
+	width: 55px;
+	background-color: black;
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+}
+
+.rights{
+	font-size: 16px;
+	color: gray;
+}
+
+@media screen and (max-width: 480px){
+	nav{
+		padding: 10px;
+		
+	}
+
+	.navTop section.search{
+		display: none;
+	}
+
+	.navBottom{
+		flex-wrap: wrap;
+		clip-path: none;
+	}
+
+	.menu{
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	.slider{
+		clip-path: none;
+		position: relative;
+	}
+
+	.sliderImg{
+		width: 90%;
+		
+	}
+
+	.sliderBg{
+		width: 100%;
+		height: 100%;
+		
+	}
+
+	.slidertitle{
+		display: none;
+		
+	}
+
+	.sliderprice{
+		top: unset;
+		bottom: 0;
+		left: 0;
+		background-color: lightblue;
+		color: black;
+		margin: 0;
+		border: none;
+	}
+
+	.sliderbutton{
+		top: unset;
+		right: 0;
+		top: 0;
+		
+		border: 2px solid gray;
+		
+	}
+
+	.features{
+		flex-direction: column;
+	}
+
+	.product{
+		position: flex;
+		flex-direction: column;
+		clip-path: none;
+		text-align: center;
+		
+	}
+
+	.prodDetails{
+		position: unset;
+		left:unset;
+		top: unset;
+		width: 100%;
+		padding: 0;
+	}
+
+	.prodImg{
+		width: 90%;
+		
+	}
+
+	.buy{
+		position: relative;
+		right: 0%;
+	}
+
+	.payment{
+		width: 75%;
+		height: 65%;
+	}
+
+
+	.gallery{
+		display: none;
+	}
+
+	.newArrivals{
+		flex-direction: column;
+	}
+
+	.arrivalsImg{
+		width: 100%;	
+	}
+
+	.arrivalsText{
+		font-size: 20px;
+		padding: 20px 0px;
+		
+	}
+
+	.arrivalsText h1{
+		margin-top: 5%;
+	}
+
+	.arrivalsBut{
+		margin-top: 0px;
+	}
+
+	footer{
+		position: relative;
+		
+		padding: 15px 5px;
+	}
+
+	footer h1{
+		font-size: 20px;
+	
+	}
+
+	footer ul{
+		font-size: 15px;
+	}
+
+	footer div{
+		padding-right: 10px;
+	}
+
+
+	.followInp{
+		width: 100%;
+	}
+
+	.follow{
+		padding-right: 0px;
+	}
+
+	.followNet{
+		width: 25px;
+		height: 25px;
+		
+	}
+
+	.rights{
+		text-align: center;
+		font-size: 14px;
+	}
+
+}
+
+	
+
